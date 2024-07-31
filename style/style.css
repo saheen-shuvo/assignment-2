@@ -22,9 +22,12 @@
     text-align: center;
     align-items: center;
     justify-content: space-between;
-    padding-left: 225px;
-    padding-right: 180px;
+    padding-left: 150px;
+    padding-right: 150px;
     padding-top: 50px;
+}
+.menu-bar-img{
+    display: none;
 }
 .nav-item{
     list-style: none;  
@@ -59,8 +62,8 @@
 .banner-content-container{
     display: flex;
     justify-content: space-between;
-    padding-left: 225px;
-    padding-right: 180px;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 .banner-img{
     width: 100%;
@@ -163,6 +166,80 @@
     font-size: 13px;
     font-weight: 200;
 }
+/* Banner-Page Style Ends */
+
+/* Change-Habits-Starts */
+
+.change-habits-section{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: black;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.change-habits-text-container h1{
+    text-align: center;
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    font-size: 2.7rem;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+.change-habits-text-container p{
+    text-align: center;
+    color: rgb(128, 127, 127);
+    font-weight: 300;
+    margin-bottom: 60px;
+    font-size: 13px;
+    font-family: "DM Sans", sans-serif;
+}
+.change-habits-card-container{
+    display: flex;
+    justify-content: space-around;
+}
+.change-habits-card-title{
+    text-align: center;
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 20px;
+    margin-bottom: 9px;
+}
+.change-habits-card-description{
+    text-align: center;
+    color: rgb(128, 127, 127);
+    font-weight: 300;
+    margin-bottom: 30px;
+    font-size: 11px;
+    font-family: "DM Sans", sans-serif;
+}
+.change-habits-img{
+    width: 100%;
+    border-radius: 50%;
+}
+.change-habits-first-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.change-habits-second-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.change-habits-third-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.change-habits-fourth-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Change-Habits-Starts */
 
 /* Responsive media Query */
 
@@ -170,8 +247,12 @@
     .nav-links{
         display: none;
     }
+    .menu-bar-img{
+        display: block;
+    }
     .nav-bar{
         padding-left: 10px;
+        padding-right: 10px;
         padding-top: 50px;
     }
     .banner-content-container{
