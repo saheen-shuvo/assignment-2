@@ -9,7 +9,6 @@ body{
 }
 
 /* Banner-Page Style Starts */
-
 .banner-page{
     background: linear-gradient(180.00deg, rgb(0, 0, 0),rgba(51, 51, 51, 0.788) 100%);
 }
@@ -173,7 +172,6 @@ body{
 /* Banner-Page Style Ends */
 
 /* Change-Habits-Starts */
-
 .change-habits-section{
     margin-top: 100px;
     background-color: black;
@@ -203,7 +201,7 @@ body{
 }
 .change-habits-card-title{
     text-align: center;
-    color: white;
+    color: rgb(255, 0, 132);
     font-family: "DM Sans", sans-serif;
     font-weight: 600;
     font-size: 1rem;
@@ -242,10 +240,9 @@ body{
     flex-direction: column;
     align-items: center;
 }
-/* Change-Habits-Starts */
+/* Change-Habits-Ends */
 
 /* Run Extra starts */
-
 .run-extra-section{
     margin-top: 100px;
     margin-bottom: 100px;
@@ -292,11 +289,199 @@ body{
     justify-content: flex-end;
 }
 .run-img{
-    width: 60%;
-    height: 78%;
+    object-fit: none;
+    object-position: 68% 32%;
+    width: 50%;
+    height: 85%;
     border-radius: 18px;
+    margin-top: 28px;
+    margin-right: 28px;
+}
+
+/* Training section starts */
+.training-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.training-text-container h2{
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    margin-bottom: 9px;
+}
+.training-text-container p{
+    color: rgb(128, 127, 127);
+    font-weight: 300;
+    margin-bottom: 30px;
+    font-size: 11px;
+    font-family: "DM Sans", sans-serif;
+}
+.training-img-container{
+    display: flex;
+    flex-direction: column;
+}
+.img-row-first{
+    display: flex;
+}
+.img-row-second{
+    display: flex;
+}
+#first-img{
+    width: 28%;
+    max-height: 260px;
+}
+#second-img{
+    width: 42%;
+    max-height: 260px;
+}
+#third-img{
+    width: 30%;
+    max-height: 260px;
+}
+#fourth-img{
+    width: 36%;
+    max-height: 260px;
+}
+#fifth-img{
+    width: 30%;
+    max-height: 260px;
+}
+#sixth-img{
+    width: 34%;
+    max-height: 260px;
+}
+
+/* BMI Calculator Style */
+.bmi-text-container{
+    margin-top: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.bmi-text-container h2{
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    margin-bottom: 9px;
+}
+.bmi-text-container p{
+    color: rgb(128, 127, 127);
+    font-weight: 300;
+    margin-bottom: 30px;
+    font-size: 11px;
+    font-family: "DM Sans", sans-serif;
+}
+.bmi-calculator-container{
+    display: flex;
+    justify-content: space-between;
+    background: #222;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.bmi-calculator-left{
+    display: flex;
+    flex-direction: column;
+}
+.bmi-chart-title h4{
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
     margin-top: 40px;
-    margin-right: 40px;
+    margin-bottom: 40px;
+}
+.bmi-chart table {
+    width: 120%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.bmi-chart th, td {
+    color: rgb(155, 155, 155);
+    padding: 12px;
+    text-align: left;
+    border: 1px solid rgb(99, 99, 99);
+    font-weight: 300;
+    font-size: 13px;
+    font-family: "DM Sans", sans-serif;
+}
+.bmi-chart th {
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: "DM Sans", sans-serif;
+}
+.bmi-calculator-title h4{
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.bmi-calculator-title p{
+    color: rgb(128, 127, 127);
+    font-weight: 300;
+    margin-bottom: 30px;
+    font-size: 11px;
+    font-family: "DM Sans", sans-serif;
+}
+.form-container{
+    display: grid;
+    grid-template-columns: repeat(2, 180px);
+    gap: 15px 25px;
+}
+.box{
+    border-radius: 5px;
+}
+#first-name{
+    color: rgb(128, 127, 127);
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.10);
+    padding: 24px 15px;
+    border-radius: 10px;
+}
+#sex-box{
+        color: rgb(128, 127, 127);
+        border: none;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.10);
+        padding: 24px 15px;
+        border-radius: 10px;
+}
+#last-box{
+    color: rgb(128, 127, 127);
+    width: 220%;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.10);
+    padding: 24px 10px;
+    border-radius: 10px;
+}
+select{
+    padding-left: 40px;
+    width: 106%;
+}
+option{
+    color: white;
+    background-color: rgb(169, 158, 144);
+}
+.calculate-button button{
+    width: 140px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: rgb(255, 0, 132);
+    font-family: "DM Sans", sans-serif;
+    border: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    margin-top: 20px;
 }
 
 /* Responsive media Query */
@@ -304,7 +489,6 @@ body{
 @media screen and (max-width: 576px){
 
     /* Banner-Page-responsive */
-
     .nav-links{
         display: none;
     }
@@ -343,17 +527,10 @@ body{
         margin-top: -150px;
     }
     .banner-button-first{
-        width: 150px;
-        height: 40px;
-        border-radius: 25px;
-        background-color: rgb(255, 0, 132);
-        font-family: "DM Sans", sans-serif;
-        border: none;
-        font-weight: bold;
-        color: rgb(255, 255, 255);
-        font-size: 15px;
-        margin-right: 10px;
-        margin-left: 20px;
+        width: 135px;
+    }
+    .banner-button-second{
+        width: 135px;
     }
     #circle{
         width: 20px;
@@ -363,7 +540,6 @@ body{
     }
 
     /* Change Habits Responsive */
-
     .change-habits-section{
         margin-top: 60px;
         margin-bottom: 60px;
@@ -374,14 +550,15 @@ body{
     .change-habits-text-container h1{
         font-size: 2.1rem;
     }
+    .change-habits-card-title{
+        color: rgb(255, 0, 132);
+    }
     .change-habits-card-container{
         display: flex;
         flex-direction: column;
     }
 
-    /* Run Extra Section */
-
-    
+    /* Run Extra Section Responsive */
 .run-extra-section{
     margin-top: 50px;
     margin-bottom: 100px;
@@ -410,9 +587,88 @@ body{
         height: 40px;
     } 
     .run-img{
+        object-fit: cover;
         width: 70%;
         margin-right: auto;
         margin-left: auto;
         margin-bottom: 40px;
+    }
+
+    /* Training section starts */
+    .training-section{
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .training-text-container h2{
+        color: white;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 900;
+        font-size: 2.5rem;
+        margin-bottom: 9px;
+    }
+    #first-img{
+        border-radius: 10px;
+        width: 100%;
+        max-height: 260px;
+    }
+    #second-img{
+        display: none;
+    }
+    #third-img{
+        display: none;
+    }
+    #fourth-img{
+        display: none;
+    }
+    #fifth-img{
+        display: none;
+    }
+    #sixth-img{
+        display: none;
+    }
+
+    /* BMI Calculator section style */
+    .bmi-text-container{
+        margin-top: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .bmi-text-container h2{
+        font-weight: 700;
+        font-size: 2.5rem;
+    }
+    .bmi-calculator-container{
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .bmi-chart table {
+        width: 70%;
+    }
+    .form-container{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 145px);
+        gap: 5px 5px;
+    }
+    #first-name{
+        width: 115px;
+        background: rgba(255, 255, 255, 0.10);
+        border-radius: 6px;
+    }
+    #sex-box{
+        width: 145px;
+}
+    #last-box{
+        width: 295px;
+        padding: 24px 15px;
+    }
+    .calculate-button{
+        display: flex;
+        justify-content: center;
     }
 }
