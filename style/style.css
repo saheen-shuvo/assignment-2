@@ -324,6 +324,9 @@ body{
     display: flex;
     flex-direction: column;
 }
+.training-img-container img{
+    border: 1px solid rgba(149, 149, 149, 0.473);
+}
 .img-row-first{
     display: flex;
 }
@@ -482,6 +485,76 @@ option{
     color: rgb(255, 255, 255);
     font-size: 15px;
     margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Meet Team Section Style */
+.meet-team-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.meet-team-text-container h2{
+    text-align: center;
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    margin-bottom: 9px;
+}
+.meet-team-text-container p{
+    text-align: center;
+    color: rgb(128, 127, 127);
+    font-weight: 300;
+    margin-bottom: 20px;
+    font-size: 11px;
+    font-family: "DM Sans", sans-serif;
+    margin-bottom: 60px;
+}
+.meet-team-img-container{
+    display: grid;
+    grid-template-columns: 32.7% 32.7% 32.7%;
+    grid-template-rows: 275px 275px;
+    padding: 30px 30px;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.10);
+    border-radius: 12px;
+}
+.meet-first{
+    position: relative;
+}
+.meet-fourth{
+    position: relative;
+}
+.meet-sixth{
+    position: relative;
+}
+.meet-team-img-container img{
+    opacity: 80%;
+    object-fit: cover;
+    object-position: 20% 5%;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+.text-overlay-name{
+    color: white;
+    font-weight: 700;
+    font-family: "DM Sans", sans-serif;
+    position: absolute;
+    bottom: 20px;
+    left: 13px;
+    font-size: 20px;
+}
+.text-overlay-position{
+    color: rgba(255, 255, 255, 0.592);
+    font-family: "DM Sans", sans-serif;
+    position: absolute;
+    bottom: 5px;
+    left: 13px;
+    font-size: 12px;
 }
 
 /* Responsive media Query */
@@ -670,5 +743,33 @@ option{
     .calculate-button{
         display: flex;
         justify-content: center;
+    }
+
+    /* Meet team section style */
+    .meet-team-section{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .meet-team-text-container h2{
+        font-weight: 700;
+        font-size: 2.5rem;
+    }
+    .meet-team-img-container{
+        grid-template-columns: 100%;
+        grid-template-rows: 275px 275px;
+    }
+    .meet-team-img-container img{
+        height: 275px;
+    }
+    .meet-fourth{
+        position: relative;
+        display: none;
+    }
+    .meet-sixth{
+        position: relative;
+        display: none;
     }
 }
