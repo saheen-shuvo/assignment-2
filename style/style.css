@@ -557,6 +557,67 @@ option{
     font-size: 12px;
 }
 
+/* footer-Section Starts */
+.footer-section{
+    background: #222;
+    margin-top: 100px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.footer-section-container{
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+}
+.footer-brand{
+    font-family: "DM Sans", sans-serif;
+    font-size: 55px;
+    font-weight: 900;
+    color: rgb(255, 0, 132);
+    font-style: italic;
+    padding-top: 60px;
+}
+.footer-description{
+    color: rgb(128, 127, 127);
+    text-align: justify;
+    font-weight: 350;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    padding-right: 10px;
+    font-size: 12px;
+    font-family: "DM Sans", sans-serif;
+}
+.get-started-text{
+    font-family: "DM Sans", sans-serif;
+    padding-top: 65px;
+    padding-left: 20px;
+    color: white;
+    font-size: 30px;
+}
+.footer-item{
+    list-style: none;  
+}
+.footer-links{
+    margin-top: 10px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-link{
+    text-decoration: none;
+    color: rgba(149, 149, 149, 0.71);
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+}
+.hr-tag{
+    border-bottom: 1px solid rgba(149, 149, 149, 0.588);
+}
+.copyright{
+    margin-top: 30px;
+    padding-bottom: 30px;
+    color: rgba(149, 149, 149, 0.751);
+    text-align: center;
+}
 /* Responsive media Query */
 
 @media screen and (max-width: 576px){
@@ -771,5 +832,51 @@ option{
     .meet-sixth{
         position: relative;
         display: none;
+    }
+    /* Footer Section Responsive */
+    .footer-section{
+        margin-top: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .footer-section-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-brand{
+        font-size: 45px;
+        font-weight: 700;
+        padding-top: 40px;
+    }
+    .footer-description{
+        text-align: justify;
+        font-weight: 350;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    .get-started-text{
+        font-family: "DM Sans", sans-serif;
+        padding-top: 30px;
+        padding-left: 0px;
+        font-size: 20px;
+    }
+    .footer-links{
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer-link{
+        font-weight: 400;
+    }
+    .hr-tag{
+        margin-top: 30px;
+        border-bottom: 1px solid rgba(149, 149, 149, 0.588);
+    }
+    .copyright{
+        margin-top: 30px;
+        padding-bottom: 30px;
+        color: rgba(149, 149, 149, 0.751);
+        text-align: center;
     }
 }
