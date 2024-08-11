@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -73,6 +75,7 @@ body{
 }
 .banner-title{
     color: white;
+    text-align: start;
     font-family: "DM Sans", sans-serif;
     font-weight: 900;
     font-size: 3.5rem;
@@ -182,8 +185,8 @@ body{
     text-align: center;
     color: white;
     font-family: "DM Sans", sans-serif;
-    font-weight: 600;
-    font-size: 2.7rem;
+    font-weight: 900;
+    font-size: 3rem;
     margin-top: 60px;
     margin-bottom: 20px;
 }
@@ -245,7 +248,6 @@ body{
 /* Run Extra starts */
 .run-extra-section{
     margin-top: 100px;
-    margin-bottom: 100px;
     padding-left: 150px;
     padding-right: 150px;
 }
@@ -356,6 +358,103 @@ body{
 #sixth-img{
     width: 34%;
     max-height: 260px;
+}
+
+/* Get-Unique-Equipments-Starts */
+.unique-equipments{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.unique-text-container h2{
+    color: white;
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    margin-bottom: 9px;
+}
+.unique-text-container p{
+    color: rgb(128, 127, 127);
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 20px;
+    font-size: 11px;
+    font-family: "DM Sans", sans-serif;
+}
+.shopping-equipment-part{
+    background-color: rgba(255, 255, 255, 0.10);
+    border-radius: 15px;
+}
+.second-section-content, h1{
+    color: rgb(255, 0, 132);
+    font-family: "Outfit", sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 0px;
+}
+.second-section-content, h3{
+    color: rgb(255, 255, 255);
+    font-family: "Outfit", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+.equipments-container{
+    display: grid;
+    grid-template-columns: 32.7% 32.7% 32.7%;
+    grid-template-rows: 275px 275px;
+    padding: 30px 30px;
+    gap: 10px;
+    border-radius: 12px;
+}
+.meet-first{
+    position: relative;
+}
+.equipments-container img{
+    opacity: 100%;
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+.text-eqipment-name{
+    color:rgb(0, 0, 0);
+    font-weight: 900;
+    font-family: "Outfit", sans-serif;
+    position: absolute;
+    bottom: 20px;
+    right: 5px;
+    font-size: 20px;
+}
+.text-eqipment-price{
+    color: rgb(0, 0, 0);
+    font-family: "Outfit", sans-serif;
+    position: absolute;
+    bottom: 1px;
+    right: 5px;
+    font-weight: 600;
+    font-size: 20px;
+}
+.eqipment-shop-button{
+    display: flex;
+    justify-content: center;
+}
+.eqipment-shop-button button{
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: rgb(255, 0, 132);
+    font-family: "DM Sans", sans-serif;
+    border: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 40px;
 }
 
 /* BMI Calculator Style */
@@ -615,6 +714,7 @@ option{
 .copyright{
     margin-top: 30px;
     padding-bottom: 30px;
+    font-weight: 300;
     color: rgba(149, 149, 149, 0.751);
     text-align: center;
 }
@@ -693,9 +793,8 @@ option{
     }
 
     /* Run Extra Section Responsive */
-.run-extra-section{
+    .run-extra-section{
     margin-top: 50px;
-    margin-bottom: 100px;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -728,7 +827,7 @@ option{
         margin-bottom: 40px;
     }
 
-    /* Training section starts */
+    /* Training section Responsive*/
     .training-section{
         display: flex;
         flex-direction: column;
@@ -764,7 +863,27 @@ option{
         display: none;
     }
 
-    /* BMI Calculator section style */
+    /* Get-Unique-Equipments-Responsive */
+.unique-equipments{
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.unique-text-container h2{
+    font-size: 2.5rem;
+}
+.shopping-equipment-part{
+    border-radius: 8px;
+}
+.equipments-container{
+    grid-template-columns: 100%;
+    grid-template-rows: 275px 275px;
+}
+.equipments-container img{
+    height: 275px;
+}
+
+    /* BMI Calculator Responsive */
     .bmi-text-container{
         margin-top: 50px;
         margin-left: 10px;
@@ -806,7 +925,7 @@ option{
         justify-content: center;
     }
 
-    /* Meet team section style */
+    /* Meet team Responsive*/
     .meet-team-section{
         display: flex;
         flex-direction: column;
@@ -878,5 +997,6 @@ option{
         padding-bottom: 30px;
         color: rgba(149, 149, 149, 0.751);
         text-align: center;
+        font-weight: 300;
     }
 }
